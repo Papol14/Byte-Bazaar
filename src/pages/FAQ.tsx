@@ -36,7 +36,18 @@ const FAQ: React.FC = () => {
           </button>
           {openItem === "item-1" && (
             <div className="px-4 pb-4 text-gray-600">
-              This is a detailed explanation about what the application does...
+              Byte Bazaar is a digital marketplace that sells educational
+              products and resources including:
+              <ul className="list-disc pl-6 mt-2">
+                <li>Freelancing guides and materials</li>
+                <li>AI learning courses and training</li>
+                <li>Educational e-books</li>
+                <li>Professional development resources</li>
+              </ul>
+              The platform focuses on providing high-quality, curated digital
+              content to help people develop new skills and advance their
+              careers in the digital space. Think of it as a specialized
+              e-commerce site for digital learning materials.
             </div>
           )}
         </div>
@@ -94,13 +105,43 @@ const FAQ: React.FC = () => {
           </button>
           {openItem === "item-3" && (
             <div className="px-4 pb-4 text-gray-600">
-              You can reach our support team through...{" "}
+              You can reach our support team through our {}
               <a
-                href=""
+                href="https://www.facebook.com/profile.php?id=61563455206172"
                 className="hover:text-blue-500 underline hover:underline"
+                target="_blank"
               >
-                Email
+                Facebook Page
               </a>
+            </div>
+          )}
+        </div>
+
+        <div className="border rounded-lg overflow-hidden">
+          <button
+            onClick={() => toggleItem("item-4")}
+            className="w-full flex justify-between items-center p-4 text-left hover:bg-gray-50 focus:outline-none"
+          >
+            <span className="font-medium">How to order products?</span>
+            <svg
+              className={`w-5 h-5 transform transition-transform duration-200 ${
+                openItem === "item-4" ? "rotate-180" : ""
+              }`}
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </button>
+          {openItem === "item-4" && (
+            <div className="px-4 pb-4 text-gray-600">
+              You can message and place your orders through our Facebook page.
             </div>
           )}
         </div>
