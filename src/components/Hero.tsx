@@ -1,6 +1,6 @@
 // Hero.tsx
 import React, { useEffect, useRef, useState } from "react";
-
+import { Link } from "react-router-dom";
 const Hero: React.FC = () => {
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef<HTMLElement>(null);
@@ -13,13 +13,15 @@ const Hero: React.FC = () => {
       { threshold: 0.1 } // Trigger when 10% of the element is visible
     );
 
-    if (sectionRef.current) {
-      observer.observe(sectionRef.current);
+    const currentSection = sectionRef.current; // Store the current ref value
+
+    if (currentSection) {
+      observer.observe(currentSection);
     }
 
     return () => {
-      if (sectionRef.current) {
-        observer.unobserve(sectionRef.current);
+      if (currentSection) {
+        observer.unobserve(currentSection);
       }
     };
   }, []);
@@ -48,12 +50,12 @@ const Hero: React.FC = () => {
           Discover a world of design assets, software, and more to take your
           projects to the next level.
         </p>
-        <a
-          href="/products"
+        <Link
+          to="/products"
           className="bg-blue-500 text-white py-2 px-6 rounded-lg text-xl transition duration-300 hover:bg-blue-600"
         >
           Explore Our Products
-        </a>
+        </Link>
       </div>
     </section>
   );

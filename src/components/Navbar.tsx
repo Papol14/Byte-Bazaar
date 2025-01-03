@@ -12,7 +12,7 @@ const Navbar: React.FC = () => {
   const linkClass = ({ isActive }: { isActive: boolean }) =>
     isActive
       ? " bg-blue-700 text-white px-3 py-2 rounded"
-      : "py-2 text-gray-700 hover:text-blue-500";
+      : "py-2 text-gray-700 hover:text-blue-500 ";
 
   return (
     <nav className="bg-gray-200 border-b shadow-lg">

@@ -31,7 +31,7 @@ const Products: React.FC = () => {
             <Link
               to={`/products/${product.id}`}
               key={product.id}
-              className="block bg-gray-200 rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow"
+              className="block bg-gray-200 rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow border hover:border-blue-400"
             >
               <img
                 src={product.image}
