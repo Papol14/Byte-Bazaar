@@ -10,8 +10,8 @@ const Footer = () => {
           <p className="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">
             © 2024 Byte Bazaar —
             <a
-              href="https://twitter.com/knyttneve"
-              className="text-gray-600 ml-1"
+              href="https://github.com/papol14"
+              className="text-gray-600 ml-1 hover:text-blue-500 hover:underline"
               rel="noopener noreferrer"
               target="_blank"
             >

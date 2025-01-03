@@ -3,24 +3,24 @@ import { Product } from "../types/product";
 export const products: Product[] = [
   {
     id: 1,
-    title: "Product 1",
+    title: "AI Mastery",
     description: "Description 1",
-    price: 100,
-    image: "https://via.placeholder.com/150",
+    price: 199,
+    image: "../public/ai-mastery.png",
   },
   {
     id: 2,
-    title: "Product 2",
+    title: "The Real World",
     description: "Description 2",
-    price: 200,
-    image: "https://via.placeholder.com/150",
+    price: 199,
+    image: "./public/the-real-world.png",
   },
   {
     id: 3,
-    title: "Product 3",
+    title: "Freelancing Learning Materials",
     description: "Description 3",
-    price: 300,
-    image: "https://via.placeholder.com/150",
+    price: 199,
+    image: "../public/freelancing.png",
   },
   {
     id: 4,

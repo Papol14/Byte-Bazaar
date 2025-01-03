@@ -46,7 +46,7 @@ const FAQ: React.FC = () => {
             onClick={() => toggleItem("item-2")}
             className="w-full flex justify-between items-center p-4 text-left hover:bg-gray-50 focus:outline-none"
           >
-            <span className="font-medium">How do I get started?</span>
+            <span className="font-medium">What is the mode of payment?</span>
             <svg
               className={`w-5 h-5 transform transition-transform duration-200 ${
                 openItem === "item-2" ? "rotate-180" : ""
@@ -65,7 +65,7 @@ const FAQ: React.FC = () => {
           </button>
           {openItem === "item-2" && (
             <div className="px-4 pb-4 text-gray-600">
-              Here are the steps to get started with our application...
+              You can pay through GCash, and Paypal.
             </div>
           )}
         </div>
@@ -94,7 +94,13 @@ const FAQ: React.FC = () => {
           </button>
           {openItem === "item-3" && (
             <div className="px-4 pb-4 text-gray-600">
-              You can reach our support team through...
+              You can reach our support team through...{" "}
+              <a
+                href=""
+                className="hover:text-blue-500 underline hover:underline"
+              >
+                Email
+              </a>
             </div>
           )}
         </div>

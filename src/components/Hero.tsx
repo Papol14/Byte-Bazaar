@@ -1,15 +1,46 @@
 // Hero.tsx
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 
 const Hero: React.FC = () => {
+  const [isVisible, setIsVisible] = useState(false);
+  const sectionRef = useRef<HTMLElement>(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setIsVisible(entry.isIntersecting);
+      },
+      { threshold: 0.1 } // Trigger when 10% of the element is visible
+    );
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
+
+    return () => {
+      if (sectionRef.current) {
+        observer.unobserve(sectionRef.current);
+      }
+    };
+  }, []);
+
   return (
     <section
-      className="relative w-full h-screen bg-cover bg-center"
-      style={{ backgroundImage: "url('../public/hero.png')" }}
+      ref={sectionRef}
+      className="relative w-full h-screen overflow-hidden"
+      style={{
+        backgroundImage: "url('../public/hero.png')",
+        backgroundAttachment: "fixed",
+        backgroundPosition: "center",
+        backgroundSize: "cover",
+      }}
     >
-      <div className="absolute inset-0 bg-black opacity-60"></div>{" "}
-      {/* Overlay for better contrast */}
-      <div className="relative z-10 flex flex-col items-center justify-center w-full h-full text-center text-white px-4 md:px-8">
+      <div className="absolute inset-0 bg-black opacity-60"></div>
+      <div
+        className={`relative z-10 flex flex-col items-center justify-center w-full h-full text-center text-white px-4 md:px-8 transition-all duration-1000 ${
+          isVisible ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-20"
+        }`}
+      >
         <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-4">
           Unlock Your Creative Potential
         </h1>
@@ -27,5 +58,22 @@ const Hero: React.FC = () => {
     </section>
   );
 };
+
+const styles = `
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+`;
+
+const styleSheet = document.createElement("style");
+styleSheet.innerText = styles;
+document.head.appendChild(styleSheet);
 
 export default Hero;
