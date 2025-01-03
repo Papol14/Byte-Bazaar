@@ -18,7 +18,7 @@ const Hero: React.FC = () => {
           projects to the next level.
         </p>
         <a
-          href="#products"
+          href="/products"
           className="bg-blue-500 text-white py-2 px-6 rounded-lg text-xl transition duration-300 hover:bg-blue-600"
         >
           Explore Our Products
