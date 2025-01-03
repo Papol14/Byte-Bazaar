@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom"; // Use NavLink for active state
-import logo from "../assets/logo.png"; // Replace with your logo path
+import logo from "/logo.png"; // Replace with your logo path
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);

@@ -12,6 +12,7 @@ import FAQ from "./pages/FAQ";
 import HomePage from "./pages/HomePage";
 import SingleProductPage from "./pages/SingleProductPage";
 import NotFoundPage from "./pages/NotFoundPage";
+import { Helmet } from "react-helmet";
 
 const App: React.FC = () => {
   const router = createBrowserRouter(
@@ -28,7 +29,15 @@ const App: React.FC = () => {
     )
   );
 
-  return <RouterProvider router={router} />;
+  return (
+    <>
+      <Helmet>
+        <title>Byte Bazaar</title>
+        <link rel="icon" href="/logo.png" />
+      </Helmet>
+      <RouterProvider router={router} />
+    </>
+  );
 };
 
 export default App;

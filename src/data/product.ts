@@ -9,7 +9,7 @@ export const products: Product[] = [
     longDescription:
       "Dive deep into the world of artificial intelligence with our revolutionary learning system. From understanding neural networks to implementing practical AI solutions, this comprehensive guide takes you from beginner to expert. Includes hands-on projects, real-world case studies, and exclusive interviews with AI industry leaders.",
     price: 199,
-    image: "../public/ai-mastery.png",
+    image: "/ai-mastery.png",
     link: "#ai-mastery",
   },
   {
@@ -20,7 +20,7 @@ export const products: Product[] = [
     longDescription:
       "Experience a groundbreaking approach to modern success through our innovative mentorship program. Learn wealth-building strategies, develop crucial life skills, and join a community of driven individuals. Features weekly live sessions, practical assignments, and personalized feedback from industry experts.",
     price: 199,
-    image: "../public/the-real-world.png",
+    image: "/the-real-world.png",
     link: "#the-real-world",
   },
   {
@@ -31,7 +31,7 @@ export const products: Product[] = [
     longDescription:
       "Discover the secrets of six-figure freelancing with our battle-tested blueprint. From finding your perfect niche to scaling your business, this comprehensive guide covers everything. Includes proposal templates, client communication scripts, and proven strategies from top-earning freelancers worldwide.",
     price: 199,
-    image: "../public/freelancing.png",
+    image: "/freelancing.png",
     link: "#freelancing",
   },
   {
@@ -42,7 +42,7 @@ export const products: Product[] = [
     longDescription:
       "Access a treasure trove of knowledge with our premium digital library. This carefully curated collection features rare insights, cutting-edge strategies, and timeless wisdom across multiple disciplines. Regular updates ensure you stay ahead of industry trends while building valuable skills.",
     price: 199,
-    image: "../public/e-books.png",
+    image: "/e-books.png",
     link: "#e-books",
   },
 ];

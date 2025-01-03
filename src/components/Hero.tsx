@@ -29,7 +29,7 @@ const Hero: React.FC = () => {
       ref={sectionRef}
       className="relative w-full h-screen overflow-hidden"
       style={{
-        backgroundImage: "url('../public/hero.png')",
+        backgroundImage: "url('/hero.png')",
         backgroundAttachment: "fixed",
         backgroundPosition: "center",
         backgroundSize: "cover",
