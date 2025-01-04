@@ -1,0 +1,11 @@
+@font-face {
+  font-family: "TT Chocolates"; /* Name you want to use for the font */
+  src: url("./fonts/TT Chocolates Trial Bold.otf") format("opentype"); /* Path to your OTF file */
+  font-weight: bold; /* Specify the font weight */
+  font-style: normal; /* Specify the font style */
+}
+
+/* Use the font in your styles */
+body {
+  font-family: "TT Chocolates", sans-serif; /* Fallback to sans-serif */
+}

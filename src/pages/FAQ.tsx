@@ -8,7 +8,7 @@ const FAQ: React.FC = () => {
   };
 
   return (
-    <div className="container max-w-3xl py-24 mx-auto">
+    <div className="container max-w-3xl py-24 mx-auto px-5">
       <h2 className="text-3xl font-bold mb-6">Frequently Asked Questions</h2>
 
       <div className="space-y-4">

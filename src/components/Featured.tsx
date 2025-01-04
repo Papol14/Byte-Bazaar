@@ -11,6 +11,10 @@ const Featured = () => {
   const featuredProducts = products.slice(0, 3);
 
   useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
         if (entries[0].isIntersecting) {

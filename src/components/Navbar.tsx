@@ -1,3 +1,4 @@
+import "/styles.css"; // Import styles.css
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom"; // Use NavLink for active state
 import logo from "/logo.png"; // Replace with your logo path
