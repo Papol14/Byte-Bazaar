@@ -3,10 +3,11 @@ import { products } from "../data/product";
 import { FaFacebook, FaArrowLeft } from "react-icons/fa";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-
+import { toast } from "react-toastify";
 const SingleProductPage = () => {
   const { id } = useParams();
   const product = products.find((p) => p.id === Number(id));
+  const notify = () => toast.success("Redirecting you to Facebook");
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -67,6 +68,7 @@ const SingleProductPage = () => {
             ${product.price}
           </p>
           <Link
+            onClick={notify}
             to={product.link}
             target="_blank"
             className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors w-fit flex items-center gap-2"
