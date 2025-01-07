@@ -1,7 +1,7 @@
 import { useParams, Link } from "react-router-dom";
 import { products } from "../data/product";
 import { FaFacebook, FaArrowLeft } from "react-icons/fa";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 
 const SingleProductPage = () => {
@@ -10,7 +10,19 @@ const SingleProductPage = () => {
 
   useEffect(() => {
     window.scrollTo(0, 0);
-  }, []);
+
+    const interval = setInterval(() => {
+      handleNextImage();
+    }, 8000); // Change image every 3 seconds
+
+    return () => clearInterval(interval); // Cleanup on unmount
+  }, []); // Add empty dependency array to run once on mount
+
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  const handleNextImage = () => {
+    setCurrentImageIndex((prevIndex) => (prevIndex + 1) % 2);
+  };
 
   if (!product) {
     return <div>Product not found</div>;
@@ -33,10 +45,16 @@ const SingleProductPage = () => {
         {/* Left column - Image */}
         <div className="flex justify-center items-center w-full md:w-1/2">
           <img
-            src={product.image}
+            src={currentImageIndex === 0 ? product.image : product.secondImage}
             alt={product.title}
             className="max-w-full h-auto rounded-lg shadow-lg"
           />
+          <button
+            onClick={handleNextImage}
+            className="absolute top-1/2 transform -translate-y-1/2 right-4 bg-white p-2 rounded-full shadow"
+          >
+            Next
+          </button>
         </div>
 
         {/* Right column - Product Information */}
