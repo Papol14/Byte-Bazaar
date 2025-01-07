@@ -11,6 +11,7 @@ export const products: Product[] = [
     price: 199,
     image: "/ai-mastery.png",
     link: "https://www.facebook.com/share/p/12CT1A6JLss/",
+    secondImage: "/ai-mastery-second.png",
   },
   {
     id: 2,
@@ -22,6 +23,7 @@ export const products: Product[] = [
     price: 199,
     image: "/the-real-world.png",
     link: "https://www.facebook.com/share/p/1BoqPGJx5x/",
+    secondImage: "/the-real-world-second.png",
   },
   {
     id: 3,
@@ -33,6 +35,7 @@ export const products: Product[] = [
     price: 199,
     image: "/freelancing.png",
     link: "https://www.facebook.com/share/p/1WruzdBUmR/",
+    secondImage: "/freelancing-second.png",
   },
   {
     id: 4,
@@ -44,5 +47,6 @@ export const products: Product[] = [
     price: 199,
     image: "/e-books.png",
     link: "https://www.facebook.com/share/p/1FLqnmXoxA/",
+    secondImage: "/e-books-second.png",
   },
 ];
