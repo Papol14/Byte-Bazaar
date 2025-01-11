@@ -1,6 +1,6 @@
 const Teams = () => {
   return (
-    <section className="text-gray-600 body-font">
+    <section className="bg-gray-200 text-gray-600 body-font">
       <div className="container px-5 py-24 mx-auto">
         <div className="flex flex-col text-center w-full mb-20">
           <h1 className="text-2xl font-medium title-font mb-4 text-gray-900">
@@ -22,12 +22,11 @@ const Teams = () => {
               />
               <div className="w-full">
                 <h2 className="title-font font-medium text-lg text-gray-900">
-                  Alper Kamu
+                  John Paul Escalona
                 </h2>
-                <h3 className="text-gray-500 mb-3">UI Developer</h3>
+                <h3 className="text-gray-500 mb-3">UI Designer</h3>
                 <p className="mb-4">
-                  DIY tote bag drinking vinegar cronut adaptogen squid fanny
-                  pack vaporware.
+                  Designs user interfaces for optimal usability and aesthetics.
                 </p>
                 <span className="inline-flex">
                   <a className="text-gray-500">
@@ -82,12 +81,12 @@ const Teams = () => {
               />
               <div className="w-full">
                 <h2 className="title-font font-medium text-lg text-gray-900">
-                  Holden Caulfield
+                  John Paul Escalona
                 </h2>
-                <h3 className="text-gray-500 mb-3">UI Developer</h3>
+                <h3 className="text-gray-500 mb-3">Frontend Developer</h3>
                 <p className="mb-4">
-                  DIY tote bag drinking vinegar cronut adaptogen squid fanny
-                  pack vaporware.
+                  Builds the client-side of web applications using HTML, CSS,
+                  and JavaScript.
                 </p>
                 <span className="inline-flex">
                   <a className="text-gray-500">
@@ -142,12 +141,12 @@ const Teams = () => {
               />
               <div className="w-full">
                 <h2 className="title-font font-medium text-lg text-gray-900">
-                  Atticus Finch
+                  John Paul Escalona
                 </h2>
-                <h3 className="text-gray-500 mb-3">UI Developer</h3>
+                <h3 className="text-gray-500 mb-3">Backend Developer</h3>
                 <p className="mb-4">
-                  DIY tote bag drinking vinegar cronut adaptogen squid fanny
-                  pack vaporware.
+                  Develops server-side logic, databases, and APIs for web
+                  applications.
                 </p>
                 <span className="inline-flex">
                   <a className="text-gray-500">
@@ -202,12 +201,12 @@ const Teams = () => {
               />
               <div className="w-full">
                 <h2 className="title-font font-medium text-lg text-gray-900">
-                  Henry Letham
+                  John Paul Escalona
                 </h2>
-                <h3 className="text-gray-500 mb-3">UI Developer</h3>
+                <h3 className="text-gray-500 mb-3">Project Manager</h3>
                 <p className="mb-4">
-                  DIY tote bag drinking vinegar cronut adaptogen squid fanny
-                  pack vaporware.
+                  Oversees project planning, execution, and team coordination to
+                  meet goals.
                 </p>
                 <span className="inline-flex">
                   <a className="text-gray-500">
