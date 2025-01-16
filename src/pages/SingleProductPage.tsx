@@ -30,62 +30,66 @@ const SingleProductPage = () => {
   }
 
   return (
-    <div className="container mx-auto px-4 py-6 h-screen">
-      <Link to="/products" className="top-0 flex items-center">
+    <div className="container mx-auto px-4 py-8 min-h-screen">
+      <Link to="/products" className="inline-block mb-6">
         <button className="bg-gray-200 text-gray-800 px-4 py-2 rounded-lg hover:bg-gray-300 transition-colors flex items-center gap-2">
           <FaArrowLeft />
           Go Back
         </button>
       </Link>
       <motion.div
-        className="flex flex-col md:flex-row gap-4 transition-all duration-300 ease-in-out mt-5"
+        className="flex flex-col md:flex-row gap-8 transition-all duration-300 ease-in-out"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5 }}
       >
         {/* Left column - Image */}
-        <div className="flex justify-center items-center w-full md:w-1/2">
+        <div className="relative flex justify-center items-center w-full md:w-1/2">
           <img
             src={currentImageIndex === 0 ? product.image : product.secondImage}
             alt={product.title}
-            className="max-w-full h-auto rounded-lg shadow-lg"
+            className="w-full h-auto rounded-lg shadow-lg"
           />
           <button
             onClick={handleNextImage}
-            className="absolute top-1/2 transform -translate-y-1/2 right-4 bg-white p-2 rounded-full shadow"
+            className="absolute top-1/2 transform -translate-y-1/2 right-4 bg-white/90 p-3 rounded-full shadow-md hover:bg-white transition-colors"
           >
             Next
           </button>
         </div>
 
         {/* Right column - Product Information */}
-        <div className="flex flex-col space-y-4 w-full md:w-1/2">
-          <h1 className="text-2xl md:text-3xl font-bold">{product.title}</h1>
-          <p className="text-gray-600 text-sm md:text-base">
+        <div className="flex flex-col space-y-6 w-full md:w-1/2">
+          <h1 className="text-3xl md:text-4xl font-bold text-gray-900">{product.title}</h1>
+          <p className="text-gray-600 text-base md:text-lg leading-relaxed">
             {product.longDescription}
           </p>
-          <p className="text-xl md:text-2xl font-semibold text-green-500">
+          <p className="text-2xl md:text-3xl font-semibold text-green-600">
             ${product.price}
           </p>
-          <h2 className="text-2xl">Buy on:</h2>
-          <Link
-            onClick={notify}
-            to={product.facebookLink}
-            target="_blank"
-            className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors w-fit flex items-center gap-2"
-          >
-            <FaFacebook className="text-lg md:text-xl" />
-            
-          </Link>
-            <Link
-            onClick={notify}
-            to={product.gumroadLink}
-            target="_blank"
-            className="bg-gray-300 text-white px-4 py-2 rounded-lg hover:bg-pink-700 transition-colors w-fit flex items-center gap-2"
-            >
-            <img src="/gumroad.png" alt="Gumroad" className="w-[1em] h-[1em] text-lg md:text-xl" />            
-            </Link>
-          
+          <div className="space-y-4">
+            <h2 className="text-2xl font-semibold text-gray-800">Buy on:</h2>
+            <div className="flex flex-col sm:flex-row gap-4">
+              <Link
+                onClick={notify}
+                to={product.facebookLink}
+                target="_blank"
+                className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors flex items-center gap-3 w-fit"
+              >
+                <FaFacebook className="text-xl" />
+                <span>Facebook</span>
+              </Link>
+              <Link
+                onClick={() => toast.success("Redirecting you to Gumroad")}
+                to={product.gumroadLink}
+                target="_blank"
+                className="bg-pink-600 text-white px-6 py-3 rounded-lg hover:bg-pink-700 transition-colors flex items-center gap-3 w-fit"
+              >
+                <img src="/gumroad.png" alt="Gumroad" className="w-[1.25em] h-[1.25em] " />
+                <span>Gumroad</span>
+              </Link>
+            </div>
+          </div>
         </div>
       </motion.div>
     </div>
