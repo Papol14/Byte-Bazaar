@@ -10,7 +10,7 @@ export const products: Product[] = [
       "Dive deep into the world of artificial intelligence with our revolutionary learning system. From understanding neural networks to implementing practical AI solutions, this comprehensive guide takes you from beginner to expert. Includes hands-on projects, real-world case studies, and exclusive interviews with AI industry leaders.",
     price: 199,
     image: "/ai-mastery.png",
-    link: "https://www.facebook.com/share/p/12CT1A6JLss/",
+    facebookLink: "https://www.facebook.com/share/p/12CT1A6JLss/",
     secondImage: "/ai-mastery-second.png",
   },
   {
@@ -22,7 +22,7 @@ export const products: Product[] = [
       "Experience a groundbreaking approach to modern success through our innovative mentorship program. Learn wealth-building strategies, develop crucial life skills, and join a community of driven individuals. Features weekly live sessions, practical assignments, and personalized feedback from industry experts.",
     price: 199,
     image: "/the-real-world.png",
-    link: "https://www.facebook.com/share/p/1BoqPGJx5x/",
+    facebookLink: "https://www.facebook.com/share/p/1BoqPGJx5x/",
     secondImage: "/the-real-world-second.png",
   },
   {
@@ -34,7 +34,7 @@ export const products: Product[] = [
       "Discover the secrets of six-figure freelancing with our battle-tested blueprint. From finding your perfect niche to scaling your business, this comprehensive guide covers everything. Includes proposal templates, client communication scripts, and proven strategies from top-earning freelancers worldwide.",
     price: 199,
     image: "/freelancing.png",
-    link: "https://www.facebook.com/share/p/1WruzdBUmR/",
+    facebookLink: "https://www.facebook.com/share/p/1WruzdBUmR/",
     secondImage: "/freelancing-second.png",
   },
   {
@@ -46,7 +46,7 @@ export const products: Product[] = [
       "Access a treasure trove of knowledge with our premium digital library. This carefully curated collection features rare insights, cutting-edge strategies, and timeless wisdom across multiple disciplines. Regular updates ensure you stay ahead of industry trends while building valuable skills.",
     price: 199,
     image: "/e-books.png",
-    link: "https://www.facebook.com/share/p/1FLqnmXoxA/",
+    facebookLink: "https://www.facebook.com/share/p/1FLqnmXoxA/",
     secondImage: "/e-books-second.png",
   },
 ];

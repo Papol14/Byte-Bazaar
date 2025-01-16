@@ -67,15 +67,25 @@ const SingleProductPage = () => {
           <p className="text-xl md:text-2xl font-semibold text-green-500">
             ${product.price}
           </p>
+          <h2 className="text-2xl">Buy on:</h2>
           <Link
             onClick={notify}
-            to={product.link}
+            to={product.facebookLink}
             target="_blank"
             className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors w-fit flex items-center gap-2"
           >
             <FaFacebook className="text-lg md:text-xl" />
-            Order on Facebook
+            
           </Link>
+            <Link
+            onClick={notify}
+            to={product.gumroadLink}
+            target="_blank"
+            className="bg-gray-300 text-white px-4 py-2 rounded-lg hover:bg-pink-700 transition-colors w-fit flex items-center gap-2"
+            >
+            <img src="/gumroad.png" alt="Gumroad" className="w-[1em] h-[1em] text-lg md:text-xl" />            
+            </Link>
+          
         </div>
       </motion.div>
     </div>
