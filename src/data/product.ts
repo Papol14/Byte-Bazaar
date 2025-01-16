@@ -53,4 +53,17 @@ export const products: Product[] = [
     gumroadLink: "*",
     secondImage: "/e-books-second.png",
   },
+  {
+    id: 5,
+    title: "50 Sales & Inventory Templates",
+    description:
+      "Effortlessly streamline your sales with a fully editable inventory system tailored to your business needs. Enjoy the flexibility to adapt, track, and manage your stock efficiently while aligning with your goals. Empower your business with easy customization and robust tracking features to stay ahead in todays dynamic market!",
+    longDescription:
+      "💼 Streamline Your Sales with Customizable Inventory! 💼 In todays fast-paced market, having a one-size-fits-all inventory system just doesn’t cut it. Our editable sales inventory tool offers the flexibility to modify and manage your stock in a way that aligns perfectly with your business goals. With easy customization and powerful tracking features, you can stay on top of your sales and inventory with confidence. Discover a solution that works as hard as you do!",
+    price: 199,
+    image: "/sales.png",
+    facebookLink: "https://www.facebook.com/share/p/1FLqnmXoxA/",
+    gumroadLink: "https://escalona0.gumroad.com/l/evezez",
+    secondImage: "/sales-second.png",
+  }
 ];
