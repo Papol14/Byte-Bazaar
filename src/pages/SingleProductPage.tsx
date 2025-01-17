@@ -69,9 +69,9 @@ const SingleProductPage = () => {
           <p className="text-gray-600 text-base md:text-lg leading-relaxed">
             {product.longDescription}
           </p>
-          <p className="text-2xl md:text-3xl font-semibold text-green-600">
-            ${product.price}
-          </p>
+            <p className="text-2xl md:text-3xl font-semibold text-green-600">
+            ₱{product.price}
+            </p>
           <div className="space-y-4">
             <h2 className="text-2xl font-semibold text-gray-800">Buy on:</h2>
             <div className="flex flex-col sm:flex-row gap-4">
