@@ -74,11 +74,11 @@ const FAQ: React.FC = () => {
               />
             </svg>
           </button>
-          {openItem === "item-2" && (
+            {openItem === "item-2" && (
             <div className="px-4 pb-4 text-gray-600">
-              You can pay through GCash, and Paypal.
+              You can pay through GCash, Paypal, and Gumroad.
             </div>
-          )}
+            )}
         </div>
 
         <div className="border rounded-lg overflow-hidden">
@@ -141,7 +141,7 @@ const FAQ: React.FC = () => {
           </button>
           {openItem === "item-4" && (
             <div className="px-4 pb-4 text-gray-600">
-              You can message and place your orders through our Facebook page.
+              You can message and place your orders through our Gumroad or you can directly buy on Facebook page.
             </div>
           )}
         </div>
