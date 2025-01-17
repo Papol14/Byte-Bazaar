@@ -18,7 +18,7 @@ const Teams = () => {
             <div className="h-full flex flex-col items-center text-center">
               <img
                 alt="team"
-                className="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4"
+                className="flex-shrink-0 rounded-full w-full h-72 object-cover object-center mb-4"
                 src="/me.jpg"
               />
               <div className="w-full">
@@ -77,7 +77,7 @@ const Teams = () => {
             <div className="h-full flex flex-col items-center text-center">
               <img
                 alt="team"
-                className="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4"
+                className="flex-shrink-0 rounded-full w-full h-72 object-cover object-center mb-4"
                 src="/me.jpg"
               />
               <div className="w-full">
@@ -137,7 +137,7 @@ const Teams = () => {
             <div className="h-full flex flex-col items-center text-center">
               <img
                 alt="team"
-                className="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4"
+                className="flex-shrink-0 rounded-full w-full h-72 object-cover object-center mb-4"
                 src="/me.jpg"
               />
               <div className="w-full">
@@ -197,7 +197,7 @@ const Teams = () => {
             <div className="h-full flex flex-col items-center text-center">
               <img
                 alt="team"
-                className="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4"
+                className="flex-shrink-0 rounded-full w-full h-72 object-cover object-center mb-4"
                 src="/me.jpg"
               />
               <div className="w-full">
