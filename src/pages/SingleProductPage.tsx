@@ -7,7 +7,12 @@ import { toast } from "react-toastify";
 const SingleProductPage = () => {
   const { id } = useParams();
   const product = products.find((p) => p.id === Number(id));
-  const notify = () => toast.success("Redirecting you to Facebook");
+  const handleRedirect = (platform: string, link: string) => {
+    toast.success(`Redirecting you to ${platform}`);
+    setTimeout(() => {
+      window.open(link, '_blank');
+    }, 1000);
+  };
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -70,24 +75,21 @@ const SingleProductPage = () => {
           <div className="space-y-4">
             <h2 className="text-2xl font-semibold text-gray-800">Buy on:</h2>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Link
-                onClick={notify}
-                to={product.facebookLink}
-                target="_blank"
+                <button
+                onClick={() => handleRedirect('Facebook', product.facebookLink)}
                 className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors flex items-center gap-3 w-fit"
-              >
+                >
                 <FaFacebook className="text-xl" />
                 <span>Facebook</span>
-              </Link>
-              <Link
-                onClick={() => toast.success("Redirecting you to Gumroad")}
-                to={product.gumroadLink}
-                target="_blank"
+                </button>
+                <button
+                onClick={() => handleRedirect('Gumroad', product.gumroadLink)}
                 className="bg-pink-600 text-white px-6 py-3 rounded-lg hover:bg-pink-700 transition-colors flex items-center gap-3 w-fit"
-              >
-                <img src="/gumroad.png" alt="Gumroad" className="w-[1.25em] h-[1.25em] " />
+                >
+                <img src="/gumroad.png" alt="Gumroad" className="w-[1.25em] h-[1.25em]" />
                 <span>Gumroad</span>
-              </Link>
+                </button>
+
             </div>
           </div>
         </div>

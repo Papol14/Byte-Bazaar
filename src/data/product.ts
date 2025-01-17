@@ -11,7 +11,7 @@ export const products: Product[] = [
     price: 199,
     image: "/ai-mastery.png",
     facebookLink: "https://www.facebook.com/share/p/12CT1A6JLss/",
-    gumroadLink: "https://escalona0.gumroad.com/l/wvuxo",
+    gumroadLink: "https://bytebazaarstore.gumroad.com/l/wvuxo",
     secondImage: "/ai-mastery-second.png",
   },
   {
@@ -63,7 +63,7 @@ export const products: Product[] = [
     price: 100,
     image: "/sales.png",
     facebookLink: "https://www.facebook.com/share/p/1FLqnmXoxA/",
-    gumroadLink: "https://escalona0.gumroad.com/l/evezez",
+    gumroadLink: "https://bytebazaarstore.gumroad.com/l/evezez",
     secondImage: "/sales-second.png",
   }
 ];
