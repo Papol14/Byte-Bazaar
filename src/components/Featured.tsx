@@ -66,7 +66,7 @@ const Featured = () => {
       </div>
 
       <div className="container mx-auto px-4 relative">
-        <h2 className="text-3xl font-bold text-center mb-12 text-gray-800">
+        <h2 className="text-3xl font-bold text-center mb-12 text-gray-100">
           Best Selling Products
         </h2>
 
