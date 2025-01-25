@@ -63,7 +63,7 @@ export const products: Product[] = [
     price: 100,
     image: "/sales.png",
     facebookLink: "https://www.facebook.com/share/p/1FLqnmXoxA/",
-    topmateLink: "*",
+    topmateLink: "https://topmate.io/byte_bazaar/1410928",
     secondImage: "/sales-second.png",
   }
 ];
