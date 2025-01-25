@@ -11,7 +11,7 @@ export const products: Product[] = [
     price: 199,
     image: "/ai-mastery.png",
     facebookLink: "https://www.facebook.com/share/p/12CT1A6JLss/",
-    gumroadLink: "https://bytebazaarstore.gumroad.com/l/wvuxo",
+    topmateLink: "*",
     secondImage: "/ai-mastery-second.png",
   },
   {
@@ -24,7 +24,7 @@ export const products: Product[] = [
     price: 199,
     image: "/the-real-world.png",
     facebookLink: "https://www.facebook.com/share/p/1BoqPGJx5x/",
-    gumroadLink: "*",
+    topmateLink: "*",
     secondImage: "/the-real-world-second.png",
   },
   {
@@ -37,7 +37,7 @@ export const products: Product[] = [
     price: 199,
     image: "/freelancing.png",
     facebookLink: "https://www.facebook.com/share/p/1WruzdBUmR/",
-    gumroadLink: "*",
+    topmateLink: "*",
     secondImage: "/freelancing-second.png",
   },
   {
@@ -50,7 +50,7 @@ export const products: Product[] = [
     price: 199,
     image: "/e-books.png",
     facebookLink: "https://www.facebook.com/share/p/1FLqnmXoxA/",
-    gumroadLink: "*",
+    topmateLink: "*",
     secondImage: "/e-books-second.png",
   },
   {
@@ -63,7 +63,7 @@ export const products: Product[] = [
     price: 100,
     image: "/sales.png",
     facebookLink: "https://www.facebook.com/share/p/1FLqnmXoxA/",
-    gumroadLink: "https://bytebazaarstore.gumroad.com/l/evezez",
+    topmateLink: "*",
     secondImage: "/sales-second.png",
   }
 ];

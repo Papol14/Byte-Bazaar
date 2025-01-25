@@ -6,6 +6,6 @@ export interface Product {
   price: number;
   image: string;
   facebookLink: string;
-  gumroadLink: string;
+  topmateLink: string;
   secondImage: string;
 }

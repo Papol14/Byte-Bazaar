@@ -83,12 +83,12 @@ const SingleProductPage = () => {
                 <span>Facebook</span>
                 </button>
                 <button
-                onClick={() => handleRedirect('Gumroad', product.gumroadLink)}
-                className="bg-pink-600 text-white px-6 py-3 rounded-lg hover:bg-pink-700 transition-colors flex items-center gap-3 w-fit"
+                onClick={() => handleRedirect('Topmate', product.topmateLink)}
+                className="bg-purple-600 px-3 text-white  rounded-lg hover:bg-purple-700 transition-colors flex items-center w-fit"
                 >
-                <img src="/gumroad.png" alt="Gumroad" className="w-[1.25em] h-[1.25em]" />
-                <span>Gumroad</span>
+                <img src="/topmate.svg" alt="Topmate" className="scale-60 w-[6rem]" />
                 </button>
+
 
             </div>
           </div>
