@@ -1,6 +1,7 @@
 import { products } from "../data/product";
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import { FaShoppingCart } from "react-icons/fa";
 
 const Products: React.FC = () => {
   const [searchQuery, setSearchQuery] = useState("");
@@ -31,16 +32,19 @@ const Products: React.FC = () => {
             <Link
               to={`/products/${product.id}`}
               key={product.id}
-              className="block bg-gray-200 rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow border hover:border-blue-400"
+              className="block bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow border border-gray-300 hover:border-blue-500"
             >
               <img
                 src={product.image}
                 alt={product.title}
-                className="w-full h-48 object-cover"
+                className="w-full h-48 object-cover transition-transform duration-300 transform hover:scale-105"
               />
               <div className="p-4">
                 <h2 className="text-xl font-semibold mb-2">{product.title}</h2>
                 <p className="text-green-600 font-bold">₱{product.price}</p>
+                <button className="mt-2 w-full bg-blue-500 text-white py-2 rounded-lg hover:bg-blue-600 transition-colors">
+                  <FaShoppingCart className="inline mr-2" /> Add to Cart
+                </button>
               </div>
             </Link>
           ))}

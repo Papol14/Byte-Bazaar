@@ -45,7 +45,7 @@ const Navbar: React.FC = () => {
 
         {/* Hamburger Icon */}
         <button
-          className="md:hidden text-gray-700 focus:outline-none"
+          className="md:hidden text-gray-600 focus:outline-none"
           onClick={toggleMenu}
         >
           <svg
@@ -78,19 +78,19 @@ const Navbar: React.FC = () => {
         <div className="md:hidden bg-white shadow-lg border-t">
           <NavLink
             to="/products"
-            className="block px-4 py-2 text-gray-700 hover:bg-blue-100 hover:text-blue-500"
+            className="block px-4 py-2 text-gray-600 hover:bg-blue-100 hover:text-blue-500"
           >
             Products
           </NavLink>
           <NavLink
             to="/faq"
-            className="block px-4 py-2 text-gray-700 hover:bg-blue-100 hover:text-blue-500"
+            className="block px-4 py-2 text-gray-600 hover:bg-blue-100 hover:text-blue-500"
           >
             FAQ
           </NavLink>
           <NavLink
             to="/about"
-            className="block px-4 py-2 text-gray-700 hover:bg-blue-100 hover:text-blue-500"
+            className="block px-4 py-2 text-gray-600 hover:bg-blue-100 hover:text-blue-500"
           >
             About
           </NavLink>

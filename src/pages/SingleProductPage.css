@@ -1,0 +1,40 @@
+.product-page {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.product-details {
+    max-width: 800px;
+    margin: auto;
+}
+
+.product-title {
+    font-size: 2em;
+}
+
+.product-description {
+    font-size: 1.2em;
+}
+
+.btn {
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+/* Responsive styles */
+@media (min-width: 768px) {
+    .product-page {
+        flex-direction: row;
+    }
+
+    .product-details {
+        flex: 1;
+        margin-right: 20px;
+    }
+
+    .btn {
+        width: 100%;
+    }
+} 

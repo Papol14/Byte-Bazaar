@@ -106,7 +106,7 @@ const Featured = () => {
                 </p>
                 <button
                   onClick={() => toggleDescription(String(product.id))}
-                  className="text-blue-500 hover:text-blue-700 mb-4 text-sm"
+                  className="text-blue-500 hover:text-blue-700 mb-4 text-sm transition-colors duration-300"
                 >
                   {expandedItems[product.id] ? "See Less" : "See More"}
                 </button>
@@ -116,7 +116,7 @@ const Featured = () => {
                   </span>
                   <Link
                     to={`/products/${product.id}`}
-                    className="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition-colors"
+                    className="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition-colors duration-300"
                   >
                     See Details
                   </Link>
