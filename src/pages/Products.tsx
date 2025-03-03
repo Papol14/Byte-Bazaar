@@ -44,7 +44,7 @@ const Products: React.FC = () => {
                 <h2 className="text-xl font-semibold mb-2">{product.title}</h2>
                 <p className="text-green-600 font-bold">₱{product.price}</p>
                 <button className="mt-2 w-full bg-blue-500 text-white py-2 rounded-lg hover:bg-blue-600 transition-colors">
-                  <FaShoppingCart className="inline mr-2" /> Add to Cart
+                  <FaShoppingCart className="inline mr-2" /> Buy Now
                 </button>
               </div>
             </Link>
