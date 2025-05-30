@@ -19,7 +19,7 @@ const Teams = () => {
               <img
                 alt="team"
                 className="flex-shrink-0 rounded-full w-full h-72 object-cover object-center mb-4"
-                src="/me.jpg"
+                src="/jp1.jpg"
               />
               <div className="w-full">
                 <h2 className="title-font font-medium text-lg text-gray-900">
@@ -78,7 +78,7 @@ const Teams = () => {
               <img
                 alt="team"
                 className="flex-shrink-0 rounded-full w-full h-72 object-cover object-center mb-4"
-                src="/me.jpg"
+                src="/me2.png"
               />
               <div className="w-full">
                 <h2 className="title-font font-medium text-lg text-gray-900">
@@ -138,7 +138,7 @@ const Teams = () => {
               <img
                 alt="team"
                 className="flex-shrink-0 rounded-full w-full h-72 object-cover object-center mb-4"
-                src="/me.jpg"
+                src="/me3.png"
               />
               <div className="w-full">
                 <h2 className="title-font font-medium text-lg text-gray-900">
@@ -198,7 +198,7 @@ const Teams = () => {
               <img
                 alt="team"
                 className="flex-shrink-0 rounded-full w-full h-72 object-cover object-center mb-4"
-                src="/me.jpg"
+                src="/jp4.jpg"
               />
               <div className="w-full">
                 <h2 className="title-font font-medium text-lg text-gray-900">
