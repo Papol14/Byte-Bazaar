@@ -87,7 +87,7 @@ const SingleProductPage = () => {
                   navigator.clipboard.writeText('09566505010');
                   toast.success('GCash number copied to clipboard!');
                 }}
-                className="bg-gray-200 text-blue px-8 py-4 mt-4 rounded-lg hover:bg-blue-600 hover:text-white transition-colors text-lg font-semibold w-fit flex items-center gap-2"
+                className="bg-gray-200 text-gray-800 px-8 py-4 mt-4 rounded-lg hover:bg-blue-600 hover:text-white transition-colors text-lg font-semibold w-fit flex items-center gap-2"
               >
                 <span className="text-xl"><img src="/gcash-logo.png" alt="" width={30} height={30} /></span>
                 GCash
