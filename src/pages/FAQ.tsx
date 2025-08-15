@@ -76,7 +76,7 @@ const FAQ: React.FC = () => {
           </button>
             {openItem === "item-2" && (
             <div className="px-4 pb-4 text-gray-600">
-              You can pay through GCash, Paypal, and Gumroad.
+              You can pay through GCash.
             </div>
             )}
         </div>
@@ -105,13 +105,13 @@ const FAQ: React.FC = () => {
           </button>
           {openItem === "item-3" && (
             <div className="px-4 pb-4 text-gray-600">
-              You can reach our support team through our {}
+              You can reach our support team through our Email:{" "}
               <a
-                href="https://www.facebook.com/profile.php?id=61563455206172"
-                className="hover:text-blue-500 underline hover:underline"
+                href="mailto:johnpaulescalona2@gmail.com"
+                className="text-blue-600 hover:text-blue-800 underline hover:underline"
                 target="_blank"
               >
-                Facebook Page
+                johnpaulescalona2@gmail.com
               </a>
             </div>
           )}
@@ -141,7 +141,12 @@ const FAQ: React.FC = () => {
           </button>
           {openItem === "item-4" && (
             <div className="px-4 pb-4 text-gray-600">
-              You can message and place your orders through our Gumroad or you can directly buy on Facebook page.
+              <ol className="list-decimal list-inside space-y-2 text-gray-700">
+                <li>Fill out the order form with your details, including your Gmail address.</li>
+                <li>Click Submit to send your order.</li>
+                <li>Send your payment via GCash to the account details provided after submission.</li>
+                <li>Once payment is confirmed, your product will be delivered to the Gmail address you entered.</li>
+              </ol>
             </div>
           )}
         </div>
