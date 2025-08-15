@@ -11,7 +11,7 @@ const Specials = () => {
         className="text-center p-2"
       >
         <h2 className="text-4xl font-bold text-gray-800">500+</h2>
-        <p className="text-gray-500">Side Hustle Products</p>
+        <p className="text-gray-500">Resellers</p>
       </motion.div>
 
       <motion.div
@@ -21,7 +21,7 @@ const Specials = () => {
         transition={{ duration: 0.6, delay: 0.2 }}
         className="text-center p-2"
       >
-        <h2 className="text-4xl font-bold text-gray-800">108</h2>
+        <h2 className="text-4xl font-bold text-gray-800">708</h2>
         <p className="text-gray-500">Products Sold</p>
       </motion.div>
     </div>

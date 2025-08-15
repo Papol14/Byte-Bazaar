@@ -5,7 +5,6 @@ export interface Product {
   longDescription: string;
   price: number;
   image: string;
-  facebookLink: string;
-  topmateLink: string;
+  checkoutLink: string;
   secondImage: string;
 }

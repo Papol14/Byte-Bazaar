@@ -1,6 +1,6 @@
 import { useParams, Link } from "react-router-dom";
 import { products } from "../data/product";
-import { FaFacebook, FaArrowLeft } from "react-icons/fa";
+import { FaArrowLeft } from "react-icons/fa";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { toast } from "react-toastify";
@@ -76,22 +76,23 @@ const SingleProductPage = () => {
               ₱{product.price}
             </p>
             <div className="space-y-4">
-              <h2 className="text-2xl font-semibold text-gray-800">Buy on:</h2>
-              <div className="flex flex-col sm:flex-row gap-4">
-                <button
-                  onClick={() => handleRedirect('Facebook', product.facebookLink)}
-                  className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors flex items-center gap-3 w-fit"
-                >
-                  <FaFacebook className="text-xl" />
-                  <span>Facebook</span>
-                </button>
-                <button
-                  onClick={() => handleRedirect('Topmate', product.topmateLink)}
-                  className="bg-purple-600 text-white px-6 py-3 rounded-lg hover:bg-purple-700 transition-colors flex items-center w-fit"
-                >
-                  <img src="/topmate.svg" alt="Topmate" className="scale-60 w-[6rem]" />
-                </button>
-              </div>
+              <button
+                onClick={() => handleRedirect('Checkout', product.checkoutLink)}
+                className="bg-green-600 text-white px-8 py-4 rounded-lg hover:bg-green-700 transition-colors text-lg font-semibold w-fit"
+              >
+                Buy Product
+              </button>
+              <button
+                onClick={() => {
+                  navigator.clipboard.writeText('09566505010');
+                  toast.success('GCash number copied to clipboard!');
+                }}
+                className="bg-gray-200 text-blue px-8 py-4 mt-4 rounded-lg hover:bg-blue-600 hover:text-white transition-colors text-lg font-semibold w-fit flex items-center gap-2"
+              >
+                <span className="text-xl"><img src="/gcash-logo.png" alt="" width={30} height={30} /></span>
+                GCash
+              </button>
+              <h3>Gcash Name: John Paul E.</h3>
             </div>
           </div>
         </motion.div>
