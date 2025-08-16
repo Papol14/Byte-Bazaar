@@ -2,6 +2,18 @@ import { Product } from "../types/product";
 
 export const products: Product[] = [
   {
+    id: 5,
+    title: "Excel Templates for Inventory & Management",
+    description:
+      "Effortlessly streamline your sales with a fully editable inventory system tailored to your business needs. Enjoy the flexibility to adapt, track, and manage your stock efficiently while aligning with your goals. Empower your business with easy customization and robust tracking features to stay ahead in todays dynamic market!",
+    longDescription:
+      "💼 Streamline Your Sales with Customizable Inventory! 💼 In todays fast-paced market, having a one-size-fits-all inventory system just doesn't cut it. Our editable sales inventory tool offers the flexibility to modify and manage your stock in a way that aligns perfectly with your business goals. With easy customization and powerful tracking features, you can stay on top of your sales and inventory with confidence. Discover a solution that works as hard as you do!",
+    price: 100,
+    image: "/sales.png",
+    checkoutLink: "https://jpexperiment005.app.n8n.cloud/form/80187707-8767-478a-8c73-91eecd19a652",
+    secondImage: "/sales-second.png",
+  },
+  {
     id: 1,
     title: "AI Mastery",
     description:
@@ -17,7 +29,7 @@ export const products: Product[] = [
     id: 2,
     title: "20+ Personal Finance E-books Bundle",
     description:
-      "The Real World by Andrew Tate is a high-priced membership program that claims to teach participants about wealth creation, fitness, and personal development.",
+      "Take control of your money and your future with this powerful bundle of 20+ Personal Finance eBooks! Whether you're struggling with budgeting, saving, investing, or getting out of debt, this all-in-one collection is your ultimate guide to financial freedom. Packed with actionable tips, proven strategies, and easy-to-follow advice, these eBooks are perfect for beginners and anyone ready to level up their financial game. Learn how to manage your money smarter, build wealth, and achieve the life you deserve—without the stress. Start your journey to financial independence today!",
     longDescription:
       "Take control of your money and your future with this powerful bundle of 20+ Personal Finance eBooks! Whether you're struggling with budgeting, saving, investing, or getting out of debt, this all-in-one collection is your ultimate guide to financial freedom. Packed with actionable tips, proven strategies, and easy-to-follow advice, these eBooks are perfect for beginners and anyone ready to level up their financial game. Learn how to manage your money smarter, build wealth, and achieve the life you deserve—without the stress. Start your journey to financial independence today!.",
     price: 100,
@@ -44,21 +56,9 @@ export const products: Product[] = [
       "Unlock your potential with our E-Books collection! Packed with insightful guides, self-improvement tips, and actionable strategies, these digital books are perfect for freelancers, side hustlers, and anyone eager to level up their skills. Learn, grow, and achieve all for an affordable price!",
     longDescription:
       "",
-    price: 199,
+    price: 100,
     image: "/financial.png",
     checkoutLink: "https://jpexperiment005.app.n8n.cloud/form/61d2685f-0043-4480-9855-e727d20001eb",
-    secondImage: "/e-books-second.png",
-  },
-  {
-    id: 5,
-    title: "Excel Templates for Inventory & Management",
-    description:
-      "Effortlessly streamline your sales with a fully editable inventory system tailored to your business needs. Enjoy the flexibility to adapt, track, and manage your stock efficiently while aligning with your goals. Empower your business with easy customization and robust tracking features to stay ahead in todays dynamic market!",
-    longDescription:
-      "💼 Streamline Your Sales with Customizable Inventory! 💼 In todays fast-paced market, having a one-size-fits-all inventory system just doesn't cut it. Our editable sales inventory tool offers the flexibility to modify and manage your stock in a way that aligns perfectly with your business goals. With easy customization and powerful tracking features, you can stay on top of your sales and inventory with confidence. Discover a solution that works as hard as you do!",
-    price: 100,
-    image: "/sales.png",
-    checkoutLink: "https://jpexperiment005.app.n8n.cloud/form/80187707-8767-478a-8c73-91eecd19a652",
-    secondImage: "/sales-second.png",
+    secondImage: "/financial-second.png",
   }
 ];
