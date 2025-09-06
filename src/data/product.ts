@@ -58,7 +58,7 @@ export const products: Product[] = [
       "",
     price: 100,
     image: "/financial.png",
-    checkoutLink: "https://bytebazaar002.app.n8n.cloud/form/61d2685f-0043-4480-9855-e727d20002eb",
+    checkoutLink: "https://bytebazaar002.app.n8n.cloud/form/61d2685f-0043-4480-9855-e727d20001eb",
     secondImage: "/financial-second.png",
   }
 ];
