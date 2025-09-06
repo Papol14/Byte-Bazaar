@@ -10,7 +10,7 @@ export const products: Product[] = [
       "💼 Streamline Your Sales with Customizable Inventory! 💼 In todays fast-paced market, having a one-size-fits-all inventory system just doesn't cut it. Our editable sales inventory tool offers the flexibility to modify and manage your stock in a way that aligns perfectly with your business goals. With easy customization and powerful tracking features, you can stay on top of your sales and inventory with confidence. Discover a solution that works as hard as you do!",
     price: 100,
     image: "/sales.png",
-    checkoutLink: "https://bytebazaar001.app.n8n.cloud/form/80187707-8767-478a-8c73-91eecd19a652",
+    checkoutLink: "https://bytebazaar002.app.n8n.cloud/form/80187707-8767-478a-8c73-91eecd19a652",
     secondImage: "/sales-second.png",
   },
   {
@@ -34,7 +34,7 @@ export const products: Product[] = [
       "Take control of your money and your future with this powerful bundle of 20+ Personal Finance eBooks! Whether you're struggling with budgeting, saving, investing, or getting out of debt, this all-in-one collection is your ultimate guide to financial freedom. Packed with actionable tips, proven strategies, and easy-to-follow advice, these eBooks are perfect for beginners and anyone ready to level up their financial game. Learn how to manage your money smarter, build wealth, and achieve the life you deserve—without the stress. Start your journey to financial independence today!.",
     price: 100,
     image: "/personal-finance.png",
-    checkoutLink: "https://bytebazaar001.app.n8n.cloud/form/9227c65e-0507-4906-b9ac-a902e45c7617",
+    checkoutLink: "https://bytebazaar002.app.n8n.cloud/form/9227c65e-0507-4906-b9ac-a902e45c7617",
     secondImage: "/personal-finance.png",
   },
   {
@@ -46,7 +46,7 @@ export const products: Product[] = [
       "Master Digital Marketing for Just 100 Pesos! This complete course covers everything you need to succeed online, including Market Research, Website Setup, Email Marketing, Copywriting, SEO, YouTube Marketing, Facebook & Twitter Ads, and Quora Marketing. Learn proven strategies to grow your brand, attract customers, and boost sales—all for an unbeatable price. Enroll now and start dominating digital marketing today!",
     price: 100,
     image: "/digital-marketing.png",
-    checkoutLink: "https://bytebazaar001.app.n8n.cloud/form/ba71a0a6-5471-43a3-b7e3-72e4816d2156",
+    checkoutLink: "https://bytebazaar002.app.n8n.cloud/form/ba71a0a6-5471-43a3-b7e3-72e4816d2156",
     secondImage: "/digital-marketing-second.png",
   },
   {
@@ -58,7 +58,7 @@ export const products: Product[] = [
       "",
     price: 100,
     image: "/financial.png",
-    checkoutLink: "https://bytebazaar001.app.n8n.cloud/form/61d2685f-0043-4480-9855-e727d20001eb",
+    checkoutLink: "https://bytebazaar002.app.n8n.cloud/form/61d2685f-0043-4480-9855-e727d20002eb",
     secondImage: "/financial-second.png",
   }
 ];

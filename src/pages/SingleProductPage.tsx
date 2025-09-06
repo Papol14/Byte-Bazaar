@@ -93,6 +93,8 @@ const SingleProductPage = () => {
                 GCash
               </button>
               <h3>Gcash Name: John Paul E.</h3>
+              <br />
+                <a href="/faq" className="hover: underline"><h2>Dont know how to buy Products?</h2></a>
             </div>
           </div>
         </motion.div>
