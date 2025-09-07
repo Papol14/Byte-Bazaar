@@ -12,9 +12,9 @@ const SingleProductPage = () => {
   const handleRedirect = (platform: string, link: string) => {
     toast.success(`Redirecting you to ${platform}`);
     setTimeout(() => {
-      window.open(link, '_blank');
+      window.open(link, '_self'); // opens in the same tab
     }, 1000);
-  };
+  };  
 
   useEffect(() => {
     window.scrollTo(0, 0);
